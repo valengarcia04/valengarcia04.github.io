@@ -1,3 +1,16 @@
+/* Reseteo  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: "Roboto";
+}
+
+body {
+    background: lightcyan;
+}
+
 /* Color y tamaño de los días */
 
 .dias td {
@@ -10,6 +23,9 @@
 
 /* Color y tamaño de los horarios */
 
+table {
+    border: 2px solid black;
+}
 
 .horarios td {
     font-size: 20px;
@@ -17,26 +33,94 @@
     border: 2px solid black;;
 }
 
-table {
-    border: 2px solid black;
+.formulario {
+    border: 1px solid black;
+}
+
+/* Barra de navegación */
+
+nav ul {
+    display: flex;
+    margin: 0 auto 0 auto;
+    gap: 30px;
+}
+
+nav {
+    align-items: center;
+    padding: 20px;
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+nav li:hover {
+    border-bottom: 1px solid white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: all 1s;
+}
+
+nav input {
+    padding: 5px;
+    border: none;
 }
 
 .cabecera {
     background-color: darkslategrey;
     width: 100%;
-    height: 100%;
 }
 
 .piedepagina {
     width: 100%;
-    height: 100%;
     background-color: darkslategray;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
-.formulario {
-    border: 1px solid black;
+.piedepagina p {
+    color: white;
 }
 
-nav li {
-    list-style: none;
+/* Redes sociales */
+
+.redes {
+    display: flex;
+}
+
+.redes2 {
+    display: flex;
+    margin: 0 auto 0 auto;
+    gap: 15px;
+}
+
+.fa-instagram, .fa-facebook, .fa-square-x-twitter {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.fa-instagram {
+    color: darkmagenta;
+}
+
+.fa-facebook {
+    color: blue;
+}
+
+.fa-square-x-twitter {
+    color: black;
+}
+
+.pie {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 0 auto;
 }
